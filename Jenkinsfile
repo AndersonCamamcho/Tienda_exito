@@ -6,10 +6,12 @@ pipeline {
                 sh 'echo "Hello, World!"'
             }
         }
-        stage('Build') {
+        stage('Permisos') {
             steps {
                 sh 'chmod +x gradlew'
             }
+        }
+        stage('Build') {
             steps {
                 sh './gradlew bootJar' 
             }

@@ -6,5 +6,9 @@ pipeline {
                 sh 'echo "Hello, World!"'
             }
         }
+        stage('Build') {
+            steps {
+                sh './gradlew build'
+        }
     }
 }

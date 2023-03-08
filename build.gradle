@@ -1,16 +1,9 @@
 plugins {
     id 'java'
-     id "org.sonarqube" 
+     
 }
 
-sonarqube {
-    properties {
-        property "sonar.sources", "src/main/java"
-        property "sonar.tests", "src/test/java"
-        property "sonar.java.binaries", "build/classes/java/main"
-        property "sonar.java.test.binaries", "build/classes/java/test"
-    }
-}
+
 group 'org.example'
 version '1.0-SNAPSHOT'
 
